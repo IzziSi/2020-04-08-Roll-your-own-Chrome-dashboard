@@ -8,7 +8,7 @@ function nextPhoto() {
 
     document.body.style.backgroundImage = "url(" + imgs[currentPhoto].src + ")"
     document.body.style.backgroundSize = "100%"
-    if (currentPhoto === imgs.length - 1) {
+    if (currentPhoto === numPhotos) {
         currentPhoto = 0;
     } else {
         currentPhoto++;
